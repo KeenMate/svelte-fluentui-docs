@@ -10,6 +10,31 @@ The Textarea component allows users to input and edit multi-line text.
 </script>
 ```
 
+## Live Demo
+
+<script>
+  import { Textarea } from 'svelte-fluentui';
+
+  let comment = '';
+  let description = 'This is a default value in the textarea.';
+</script>
+
+<div style="padding: 20px; border: 1px solid #ccc; border-radius: 8px; margin: 20px 0;">
+  <Textarea label="Comments" bind:value={comment} placeholder="Enter your comments here..." />
+  <br><br>
+  <Textarea label="Description" bind:value={description} rows={6} />
+  <br><br>
+  <Textarea label="Large Text Area" placeholder="This has 10 rows..." rows={10} />
+  <br><br>
+  <Textarea label="Disabled" value="This textarea is disabled" disabled />
+
+  <div style="margin-top: 15px; padding: 10px; background: #f5f5f5; border-radius: 4px;">
+    <strong>Values:</strong><br>
+    Comment: {comment}<br>
+    Description length: {description.length} characters
+  </div>
+</div>
+
 ## Basic Usage
 
 ```svelte

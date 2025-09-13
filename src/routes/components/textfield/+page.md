@@ -10,6 +10,35 @@ The TextField component allows users to input and edit text on a single line.
 </script>
 ```
 
+## Live Demo
+
+<script>
+  import { TextField } from 'svelte-fluentui';
+
+  let name = '';
+  let email = '';
+  let password = '';
+</script>
+
+<div style="padding: 20px; border: 1px solid #ccc; border-radius: 8px; margin: 20px 0;">
+  <TextField label="Name" bind:value={name} placeholder="Enter your name" />
+  <br><br>
+  <TextField label="Email" bind:value={email} type="email" placeholder="user@example.com" />
+  <br><br>
+  <TextField label="Password" bind:value={password} type="password" placeholder="Password" />
+  <br><br>
+  <TextField label="Disabled Field" value="Cannot edit" disabled />
+  <br><br>
+  <TextField label="Required Field" required />
+
+  <div style="margin-top: 15px; padding: 10px; background: #f5f5f5; border-radius: 4px;">
+    <strong>Values:</strong><br>
+    Name: {name}<br>
+    Email: {email}<br>
+    Password: {password ? '•'.repeat(password.length) : ''}
+  </div>
+</div>
+
 ## Basic Usage
 
 ```svelte

@@ -10,6 +10,33 @@ The NumberField component allows users to input numeric values with optional inc
 </script>
 ```
 
+## Live Demo
+
+<script>
+  import { NumberField } from 'svelte-fluentui';
+
+  let quantity = 1;
+  let age = 25;
+  let price = 19.99;
+</script>
+
+<div style="padding: 20px; border: 1px solid #ccc; border-radius: 8px; margin: 20px 0;">
+  <NumberField label="Quantity" bind:value={quantity} min={0} max={100} />
+  <br><br>
+  <NumberField label="Age" bind:value={age} min={0} max={120} />
+  <br><br>
+  <NumberField label="Price" bind:value={price} step={0.01} min={0} />
+  <br><br>
+  <NumberField label="Disabled" value={42} disabled />
+
+  <div style="margin-top: 15px; padding: 10px; background: #f5f5f5; border-radius: 4px;">
+    <strong>Values:</strong><br>
+    Quantity: {quantity}<br>
+    Age: {age}<br>
+    Price: ${price}
+  </div>
+</div>
+
 ## Basic Usage
 
 ```svelte

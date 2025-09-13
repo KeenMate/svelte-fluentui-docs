@@ -10,6 +10,26 @@ The Button component provides users with the ability to trigger actions and make
 </script>
 ```
 
+## Live Demo
+
+<script>
+  import { Button } from 'svelte-fluentui';
+
+  let clickCount = 0;
+
+  function handleClick() {
+    clickCount++;
+  }
+</script>
+
+<div style="padding: 20px; border: 1px solid #ccc; border-radius: 8px; margin: 20px 0;">
+  <Button on:click={handleClick}>Click me ({clickCount})</Button>
+
+  <Button variant="primary" style="margin-left: 10px;">Primary Button</Button>
+
+  <Button disabled style="margin-left: 10px;">Disabled Button</Button>
+</div>
+
 ## Basic Usage
 
 ```svelte
