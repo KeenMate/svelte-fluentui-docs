@@ -47,7 +47,7 @@ docker-build: ## Build Docker image
 	docker build --progress plain -t registry.km8.es/svelte-fluentui-docs:production .
 
 docker-run: docker-build ## Build and run Docker container
-	docker run -p 8080:80 --name svelte-fluentui-docs svelte-fluentui-docs:production
+	docker run -p 8080:80 --name svelte-fluentui-docs registry.km8.es/svelte-fluentui-docs:production
 
 docker-stop: ## Stop and remove Docker container
 	docker stop svelte-fluentui-docs || true

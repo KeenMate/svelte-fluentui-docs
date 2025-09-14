@@ -17,6 +17,22 @@ This is a Sveltepress documentation site built with SvelteKit 2, Svelte 5, and T
 - **Run in Docker**: `make docker-run` (serves on http://localhost:8080)
 - **Stop Docker container**: `make docker-stop`
 
+## URL Configuration
+
+To generate absolute URLs instead of relative paths:
+
+1. **For subdirectory deployment**: Set `BASE_PATH` environment variable
+   ```bash
+   BASE_PATH="/docs" pnpm build
+   ```
+
+2. **For Docker with absolute URLs**:
+   ```bash
+   docker build --build-arg BASE_PATH="/your-path" -t svelte-fluentui-docs .
+   ```
+
+3. **For root domain deployment**: No configuration needed (default behavior)
+
 ## Architecture
 
 - **Framework**: SvelteKit 2 with Svelte 5 and TypeScript

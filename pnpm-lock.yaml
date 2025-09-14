@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       svelte-fluentui:
-        specifier: file:../svelte-fluentui
-        version: file:../svelte-fluentui(@babel/core@7.28.4)(@sveltejs/kit@2.39.1(@sveltejs/vite-plugin-svelte@4.0.4(svelte@5.38.10)(vite@5.4.20(@types/node@20.19.14)(sass-embedded@1.92.1)(sass@1.92.1)(terser@5.44.0)))(svelte@5.38.10)(vite@5.4.20(@types/node@20.19.14)(sass-embedded@1.92.1)(sass@1.92.1)(terser@5.44.0)))(postcss@8.5.6)(sass@1.92.1)(svelte@5.38.10)(typescript@5.9.2)
+        specifier: 1.0.0-rc01
+        version: 1.0.0-rc01(@babel/core@7.28.4)(@sveltejs/kit@2.39.1(@sveltejs/vite-plugin-svelte@4.0.4(svelte@5.38.10)(vite@5.4.20(@types/node@20.19.14)(sass-embedded@1.92.1)(sass@1.92.1)(terser@5.44.0)))(svelte@5.38.10)(vite@5.4.20(@types/node@20.19.14)(sass-embedded@1.92.1)(sass@1.92.1)(terser@5.44.0)))(postcss@8.5.6)(sass@1.92.1)(svelte@5.38.10)(typescript@5.9.2)
     devDependencies:
       '@sveltejs/adapter-static':
         specifier: ^3.0.1
@@ -3141,8 +3141,8 @@ packages:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
 
-  svelte-fluentui@file:../svelte-fluentui:
-    resolution: {directory: ../svelte-fluentui, type: directory}
+  svelte-fluentui@1.0.0-rc01:
+    resolution: {integrity: sha512-8KTJfKkkPDHcBXpqyj1GaQCuKkhHkfY3ylRnPUBjfA14fk60WXjFrS7lbls/zudPE3eOkXRwIsYCLbF6bBsqzA==}
     peerDependencies:
       svelte: ^5.0.0
 
@@ -7168,7 +7168,7 @@ snapshots:
 
   supports-preserve-symlinks-flag@1.0.0: {}
 
-  svelte-fluentui@file:../svelte-fluentui(@babel/core@7.28.4)(@sveltejs/kit@2.39.1(@sveltejs/vite-plugin-svelte@4.0.4(svelte@5.38.10)(vite@5.4.20(@types/node@20.19.14)(sass-embedded@1.92.1)(sass@1.92.1)(terser@5.44.0)))(svelte@5.38.10)(vite@5.4.20(@types/node@20.19.14)(sass-embedded@1.92.1)(sass@1.92.1)(terser@5.44.0)))(postcss@8.5.6)(sass@1.92.1)(svelte@5.38.10)(typescript@5.9.2):
+  svelte-fluentui@1.0.0-rc01(@babel/core@7.28.4)(@sveltejs/kit@2.39.1(@sveltejs/vite-plugin-svelte@4.0.4(svelte@5.38.10)(vite@5.4.20(@types/node@20.19.14)(sass-embedded@1.92.1)(sass@1.92.1)(terser@5.44.0)))(svelte@5.38.10)(vite@5.4.20(@types/node@20.19.14)(sass-embedded@1.92.1)(sass@1.92.1)(terser@5.44.0)))(postcss@8.5.6)(sass@1.92.1)(svelte@5.38.10)(typescript@5.9.2):
     dependencies:
       '@fluentui/web-components': 2.6.1
       '@sveltejs/adapter-static': 3.0.9(@sveltejs/kit@2.39.1(@sveltejs/vite-plugin-svelte@4.0.4(svelte@5.38.10)(vite@5.4.20(@types/node@20.19.14)(sass-embedded@1.92.1)(sass@1.92.1)(terser@5.44.0)))(svelte@5.38.10)(vite@5.4.20(@types/node@20.19.14)(sass-embedded@1.92.1)(sass@1.92.1)(terser@5.44.0)))

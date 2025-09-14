@@ -10,37 +10,6 @@ The Checkbox component allows users to select one or more options from a set.
 </script>
 ```
 
-## Live Demo
-
-<script>
-  import { Checkbox } from 'svelte-fluentui';
-
-  let acceptTerms = false;
-  let newsletter = true;
-  let notifications = false;
-</script>
-
-<div style="padding: 20px; border: 1px solid #ccc; border-radius: 8px; margin: 20px 0;">
-  <Checkbox bind:checked={acceptTerms}>Accept terms and conditions</Checkbox>
-  <br><br>
-  <Checkbox bind:checked={newsletter}>Subscribe to newsletter</Checkbox>
-  <br><br>
-  <Checkbox bind:checked={notifications}>Enable notifications</Checkbox>
-  <br><br>
-  <Checkbox indeterminate>Partially selected</Checkbox>
-  <br><br>
-  <Checkbox disabled>Disabled option</Checkbox>
-  <br><br>
-  <Checkbox checked disabled>Disabled checked</Checkbox>
-
-  <div style="margin-top: 15px; padding: 10px; background: #f5f5f5; border-radius: 4px;">
-    <strong>Selected:</strong><br>
-    Terms accepted: {acceptTerms}<br>
-    Newsletter: {newsletter}<br>
-    Notifications: {notifications}
-  </div>
-</div>
-
 ## Basic Usage
 
 ```svelte

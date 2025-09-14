@@ -10,7 +10,7 @@
     "build": "vite build"
   },
   "dependencies": {
-    "svelte-fluentui": "file:../svelte-fluentui"
+    "svelte-fluentui": "1.0.0-rc01"
   },
   "devDependencies": {
     "@sveltejs/adapter-static": "^3.0.1",

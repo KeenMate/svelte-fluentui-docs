@@ -10,35 +10,6 @@ The Switch component provides a toggle control for binary states like on/off or 
 </script>
 ```
 
-## Live Demo
-
-<script>
-  import { Switch } from 'svelte-fluentui';
-
-  let notifications = false;
-  let autoSave = true;
-  let darkMode = false;
-</script>
-
-<div style="padding: 20px; border: 1px solid #ccc; border-radius: 8px; margin: 20px 0;">
-  <Switch bind:checked={notifications}>Enable notifications</Switch>
-  <br><br>
-  <Switch bind:checked={autoSave}>Auto-save enabled</Switch>
-  <br><br>
-  <Switch bind:checked={darkMode}>Dark mode</Switch>
-  <br><br>
-  <Switch disabled>Feature unavailable</Switch>
-  <br><br>
-  <Switch checked disabled>Always enabled</Switch>
-
-  <div style="margin-top: 15px; padding: 10px; background: #f5f5f5; border-radius: 4px;">
-    <strong>Settings:</strong><br>
-    Notifications: {notifications ? 'On' : 'Off'}<br>
-    Auto-save: {autoSave ? 'On' : 'Off'}<br>
-    Dark mode: {darkMode ? 'On' : 'Off'}
-  </div>
-</div>
-
 ## Basic Usage
 
 ```svelte

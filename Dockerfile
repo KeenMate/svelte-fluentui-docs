@@ -29,6 +29,9 @@ COPY src ./src
 # COPY . .
 
 # Build the static site
+# Set BASE_PATH environment variable for absolute URLs if needed
+# ARG BASE_PATH=""
+# ENV BASE_PATH=${BASE_PATH}
 RUN source $HOME/.shrc && pnpm build
 
 # Production stage - serve static files with nginx
@@ -40,6 +43,8 @@ COPY --from=builder /app/dist /usr/share/nginx/html
 # Copy custom nginx configuration (optional)
 # COPY nginx.conf /etc/nginx/nginx.conf
 
+RUN ls -laR /usr/share/nginx/html/components
+
 # Create a simple nginx configuration for SPA
 RUN echo 'server { \
     listen 80; \
@@ -48,7 +53,10 @@ RUN echo 'server { \
     index index.html; \
     \
     location / { \
-        try_files $uri $uri/ /index.html; \
+        add_header X-Debug-Uri $uri always; \
+        add_header X-Debug-Request-Uri $request_uri always; \ 
+        add_header X-Debug-Document-Root $document_root always; \
+        try_files $uri $uri.html $uri/ /index.html; \
     } \
     \
     # Cache static assets \

@@ -18,6 +18,10 @@ const config = {
 				// Continue building instead of failing
 				return;
 			}
+		},
+		paths: {
+			base: process.env.BASE_PATH || '',
+			relative: false
 		}
 	},
 }
